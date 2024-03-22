@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    <title>Login</title>
+</head>
+<body>
+    <form class="container-login">
+        <div class="container-img"></div>
+
+        <div class="cadastro-container">
+            <h1>Login</h1>
+            
+            <div class="email-container">
+                <span>E-mail</span>
+                <label for="email">
+                    <input type="email" id="email" required>
+                </label>
+            </div>
+        
+            <div class="senha">
+                <span>Senha</span>
+                <label for="senha">
+                    <input type="password" id="senha" required>
+                    <img id="eyes" src="./img/olho.png" alt="" onclick="versenha()">
+                </label>
+            </div>
+
+            <input type="submit" name="" id="btn-form">
+        </div>
+    </form>
+</body>
+</html>
