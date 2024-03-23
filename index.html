@@ -15,21 +15,21 @@
             <h1>Login</h1>
             
             <div class="email-container">
-                <span>E-mail</span>
-                <label for="email">
-                    <input type="email" id="email" required>
+                <span>Usuario</span>
+                <label for="usuario">
+                    <input type="text" id="usuario" placeholder="Digite o usuario" required>
                 </label>
             </div>
         
             <div class="senha-container">
                 <span>Senha</span>
                 <label for="senha">
-                    <input type="password" id="senha" required>
+                    <input type="password" id="senha" placeholder="Digite a senha" required>
                     <img id="eyes" src="./img/olho.png" alt="" onclick="versenha()">
                 </label>
             </div>
 
-            <input type="submit" name="" id="btn-form">
+            <input type="submit" name="" id="btn-form" onclick="enviar(); return false" >
         </div>
     </form>
 </body>

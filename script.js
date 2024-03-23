@@ -1,8 +1,19 @@
 const inputsenha = document.getElementById('senha');
 const eyes = document.getElementById('eyes');
+const usuario = document.getElementById('usuario').value;
+const senha = document.getElementById('senha').value;
+
+function enviar(){
+    if(usuario == "" && senha == ""){
+        alert("Sucesso");
+        location.href = "home.html";
+    }else{
+        alert('Usuario ou senha incorreto');
+    }
+}
 
 function versenha(){
-let inputsenhatype = inputsenha.type == "password"
+    let inputsenhatype = inputsenha.type == "password"
 
     if(inputsenhatype){
         inputsenha.setAttribute("type", "text");
