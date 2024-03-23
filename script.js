@@ -4,7 +4,7 @@ const usuario = document.getElementById('usuario').value;
 const senha = document.getElementById('senha').value;
 
 function enviar(){
-    if(usuario == "" && senha == ""){
+    if(usuario == "admin" && senha == "admin"){
         alert("Sucesso");
         location.href = "home.html";
     }else{
