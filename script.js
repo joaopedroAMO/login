@@ -1,14 +1,18 @@
 const inputsenha = document.getElementById('senha');
 const eyes = document.getElementById('eyes');
-const usuario = document.getElementById('usuario').value;
-const senha = document.getElementById('senha').value;
 
 function enviar(){
+    const usuario = document.getElementById('usuario').value;
+    const senha = document.getElementById('senha').value;
+    const btn = document.getElementById('btn-voltar')
     if(usuario == "admin" && senha == "admin"){
         alert("Sucesso");
-        location.href = "home.html";
+        document.getElementById("form").style.display = "none"
+        btn.style.display = "block"
+        // location.href = "home.html";
     }else{
         alert('Usuario ou senha incorreto');
+        btn.style.display = "none"
     }
 }
 
@@ -21,5 +25,15 @@ function versenha(){
     }else{
         inputsenha.setAttribute("type","password");
         eyes.setAttribute("src", "./img/closed.png");
+    }
+}
+
+function voltar(){
+    const btn = document.getElementById('btn-voltar')
+    if( document.getElementById("form").style.display = "none"){
+        document.getElementById("form").style.display = "flex"
+        btn.style.display = "none"
+    }else{
+        document.getElementById("form").style.display = "none"
     }
 }
